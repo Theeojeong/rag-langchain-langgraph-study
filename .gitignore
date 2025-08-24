@@ -1,0 +1,67 @@
+# Python 환경
+.venv
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# 환경 변수
+.env
+.env.local
+
+# 프로젝트 설정
+
+# 문서 파일
+tax.docx
+*.docx
+*.pdf
+
+# 이미지 폴더
+imgs/
+docker/
+
+# 수업 관련 폴더 (대용량 파일 포함)
+수업/
+RAG를 활용한 LLM Aplication 개발 (feat. LangChain)/
+
+# 데이터 컬렉션 (벡터 DB)
+income_tax_collection/
+**/income_tax_collection/
+
+# 벡터 데이터베이스 및 바이너리 파일들
+*.bin
+*.db
+*.sqlite
+*.sqlite3
+data_level*.bin
+*.faiss
+*.pkl
+*.pickle
+
+# UUID 형태의 폴더들 (벡터 저장소)
+**/[0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f]-*/
+
+# 임시 파일들
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+
+# 로그 파일
+*.log
+logs/
+
+# 모델 파일들 (대용량)
+*.model
+*.weights
+*.h5
+*.pt
+*.pth
+
+# Chroma DB 관련
+chroma*/
+.chroma/
+
+# LangChain 캐시
+.langchain/
