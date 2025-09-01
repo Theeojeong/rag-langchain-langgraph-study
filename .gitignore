@@ -65,3 +65,5 @@ chroma*/
 
 # LangChain 캐시
 .langchain/
+
+google/
