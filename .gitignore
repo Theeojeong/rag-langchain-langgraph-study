@@ -17,6 +17,8 @@ tax.docx
 *.docx
 *.pdf
 
+criminal_agent_law/criminal_law_collection/
+
 # 이미지 폴더
 imgs/
 docker/
