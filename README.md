@@ -4,6 +4,10 @@
 
 본 프로젝트의 결과물은 교육/연구 목적이며, 특히 금융 관련 예시는 투자 조언이 아닙니다.
 
+## n8n 배포 주소
+
+https://n8n.theojeong.cloud
+
 ## 주요 학습 주제
 
 - 에이전트 기본기: LangChain 도구 호출(ReAct)과 상태 관리
@@ -14,12 +18,14 @@
 ## 구성 요소
 
 - 경제 애널리스트 멀티 에이전트
+
   - 원본 예제: `real_agent_for_analyst.py`
   - 고도화 버전(기존 파일 미변경): `enhanced_econ_agent.py`
     - 추가 도구: 기술적 지표(RSI/MACD/SMA), 거시 스냅샷(^GSPC/^VIX/^TNX), 기업 프로필, 시세 히스토리
   - Streamlit UI: `streamlit_analyst_app.py` (채팅/에이전트 트레이스, 대화 ID별 저장)
 
 - RAG(소득세법) 챗봇
+
   - 앱: `chat.py`
   - 체인/리트리버: `llm.py`, 프롬프트 예시: `config.py`
 
@@ -31,14 +37,14 @@
 
 사전 요구사항: Python 3.10+ 권장, pip, 가상환경 사용 권장
 
-1) 저장소 클론
+1. 저장소 클론
 
 ```bash
 git clone <this-repo>
 cd AI_Agent
 ```
 
-2) 가상환경 생성/활성화
+2. 가상환경 생성/활성화
 
 - Windows
 
@@ -54,7 +60,7 @@ python3 -m venv .venv
 source .venv/bin/activate
 ```
 
-3) 패키지 설치
+3. 패키지 설치
 
 ```bash
 pip install -r requirements.txt
@@ -67,6 +73,7 @@ pip install -r requirements.txt
 프로젝트는 `.env`를 로드합니다. 사용 중인 기능에 따라 다음을 설정하세요.
 
 - Azure OpenAI (경제 애널리스트 에이전트)
+
   - `AZURE_OPENAI_API_KEY`
   - `AZURE_OPENAI_ENDPOINT`
   - 모델 배포명은 코드에 하드코딩되어 있으므로(예: `gpt-4o-2024-11-20`) 포털에서 동일한 이름으로 배포되어 있어야 합니다.
