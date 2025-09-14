@@ -1,10 +1,10 @@
 # AI Agent Study Project (AI_Agent)
 
-이 저장소는 LangChain·LangGraph·Streamlit을 중심으로 “에이전트” 개념을 공부하고 실습하기 위한 개인 학습용 프로젝트입니다. 단일 에이전트부터 ReAct 기반 도구 호출, 멀티 에이전트(슈퍼바이저-워커 구조), RAG(검색 증강), 간단한 UI까지 단계적으로 시도합니다.
+이 저장소는 LangChain·LangGraph·n8n을 중심으로 “AI-AGENT” 를 공부하고 실습하기 위한 개인 학습용 프로젝트입니다.
 
-본 프로젝트의 결과물은 교육/연구 목적이며, 특히 금융 관련 예시는 투자 조언이 아닙니다.
+본 프로젝트의 결과물은 교육/연구 목적입니다.
 
-## n8n 배포 주소
+## n8n aws 배포 주소
 
 https://n8n.theojeong.cloud
 
@@ -14,6 +14,7 @@ https://n8n.theojeong.cloud
 - 멀티 에이전트: LangGraph 기반 Supervisor → Worker 라우팅
 - RAG: 소득세법 문서 기반 질의응답(대화 이력 반영, Few-shot)
 - UI: Streamlit 채팅 인터페이스 및 대화 저장·복원
+- n8n
 
 ## 구성 요소
 
